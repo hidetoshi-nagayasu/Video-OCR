@@ -9,6 +9,7 @@
 - Google Cloudでサービスアカウントを作成
 - JSONキーファイルがダウンロードされたらソースコードと同階層に配置
 - 環境変数を設定
+- Google Cloud SDKをインストールし、認証
 - 「npm install」でパッケージをインストール
 
 Google Cloud上での手順は[Cloud Video Intelligence API クイックスタート](https://cloud.google.com/video-intelligence/docs/quickstart-client-libraries?hl=ja)を参照。
@@ -64,6 +65,24 @@ Google Cloudのコンソール画面から支払い情報を設定する。
 echo "export GOOGLE_APPLICATION_CREDENTIALS={JSONファイルのファイルパス}" >> ~/.bashrc
 ```
 
+### ■ Google Cloud SDKをインストールし、認証
+
+[インストールガイドのページ](https://cloud.google.com/sdk/docs/install?hl=ja#windows)に従って、SDKをインストールする。
+
+インストールが完了したらSDKのターミナルが表示され、
+
+> You must log in to continue. Would you like to log in (Y/n)?
+
+と表示されるので「Y」。
+
+ブラウザに飛ばされるので、Googleアカウントでログイン。
+
+ログイン完了後、ターミナルに戻ると、
+
+> Pick cloud project to use.
+
+という表示でプロジェクトが一覧表示されるので、APIを利用するプロジェクトの数字を入力し、Enter。
+
 ### ■ 「npm install」でパッケージをインストール
 
 ソースコードがあるディレクトリに移動し、npm installコマンドを実行。
@@ -84,6 +103,11 @@ node main.js
 
 と聞かれるので、対象の動画のファイルパスを入力するか、
 ファイル自体をドラッグ&ドロップしてEnterを押してAPI実行する。
+
+ファイルパスの例
+```bash
+> C:/Users/xxxx/Videos/sample.mp4
+```
 
 終わったら、同じ階層内に「output.txt」というファイルに出力される。
 
