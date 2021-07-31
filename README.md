@@ -83,6 +83,8 @@ echo "export GOOGLE_APPLICATION_CREDENTIALS={JSONファイルのファイルパ�
 
 という表示でプロジェクトが一覧表示されるので、APIを利用するプロジェクトの数字を入力し、Enter。
 
+Google Cloudの作業はここまで。
+
 ### ■ 「npm install」でパッケージをインストール
 
 ソースコードがあるディレクトリに移動し、npm installコマンドを実行。
