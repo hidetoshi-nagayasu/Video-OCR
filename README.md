@@ -8,6 +8,7 @@
 - Google Cloudでサービスアカウントを作成
 - JSONキーファイルを作成、ダウンロードし、ソースコードと同階層に配置
 - 環境変数「GOOGLE_APPLICATION_CREDENTIALS」を「.bashrc」などに記入
+- 「npm install」でパッケージをインストール
 
 Google Cloud上での手順は[Cloud Video Intelligence API クイックスタート](https://cloud.google.com/video-intelligence/docs/quickstart-client-libraries?hl=ja)を参照。
 
@@ -50,8 +51,18 @@ Google Cloudのコンソール画面から支払い情報を設定する。
 echo "export GOOGLE_APPLICATION_CREDENTIALS={JSONファイルのファイルパス}" >> ~/.bashrc
 ```
 
+### ■ 「npm install」でパッケージをインストール
+
+ソースコードがあるディレクトリに移動し、npm installコマンドを実行。
+
+```bash
+cd {ソースコードがあるディレクトリ}
+
+npm install
+```
+
 ## API実行方法
-ソースコードがあるディレクトリに移動後、下記コマンドを実行
+ソースコードがあるディレクトリで下記コマンドを実行
 ```bash
 node main.js
 ```
