@@ -1,0 +1,17 @@
+{
+  "name": "Video_OCR",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/storage": "^5.11.0",
+    "@google-cloud/video-intelligence": "^3.3.6",
+    "moment": "^2.29.1",
+    "moment-duration-format": "^2.3.2"
+  }
+}
